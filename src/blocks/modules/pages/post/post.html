@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housebarn</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-post">
+    @@include('../../common/header/header.html')
+    <main class="p-post__main">
+      <div class="p-post__intro">
+        <div class="container p-post__intro-wrapper">
+          <div class="p-post__intro-content">
+            <h1 class="p-post__intro-title">
+              Строительная компания <b>HOUSEBARN</b> в Санкт-Петербурге
+            </h1>
+            <p>
+              <b>Housebarn</b> — российская строительная компания специализирующаяся на строительстве домов и конструкций в стиле BARN любой сложности. Стиль BARN — это современный подход к строительству, возводимые конструкции похожи на амбары, от этого и ведёт свою историю название стиля.
+            </p>
+            <p>
+              <b>Housebarn</b> — это команда опытных и молодых специалистов, которая старается предложить максимум своих знаний и приложить максимум усилий в создание современных, комфортных и универсальных конструкциях, которые могут одинаково успешно использовать как загородный дом, баня или коммерческое помещение. Нашими архитекторами был разработан ряд готовых проектов, которые удовлетворят большинство желающих построить дом, также мы предлагаем разработку индивидуальных проектов с учетом всех пожеланий заказчиков.
+            </p>
+          </div>
+          <figure class="p-post__intro-figure">
+            <img class="p-post__intro-image" src="img/pic-post-intro.jpg" alt="Alt">
+          </figure>
+        </div>
+      </div>
+      <div class="p-post__content">
+        <div class="container">
+          <article class="p-post__article">
+            <h2>Преимущества <b>Housebarn</b>:</h2>
+            <ul>
+              <li>
+                Индивидуальный подход к каждому клиенту (персональный менеджер, профессиональные консультации);
+              </li>
+              <li>
+                Качественный материалы от ведущих, проверенных производителей;
+              </li>
+              <li>
+                Полный цикл строительных работ, начиная от помощи в разметке и оформлении участка и заканчивая внутренней отделкой помещения;
+              </li>
+              <li>
+                Гарантия на выполненные работы и используемые работы;
+              </li>
+            </ul>
+            <p>
+              Housebarn регулярно участвует в известных строительных выставках Санкт-Петербурга, на которых любой желающий может пообщаться с нашими специалистами и посмотреть наши строительные решения в живую.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      @@include('../../common/gallery/gallery.html')
+      
+      <div class="talk p-post__talk">
+        <div class="container">
+          @@include('../../common/form/form.html')
+        </div>
+      </div>
+    </main>
+    @@include('../../common/footer/footer.html')
+    @@include('../../common/bonus/bonus.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

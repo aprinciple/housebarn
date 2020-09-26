@@ -1,0 +1,50 @@
+<header class="header">
+  <div class="header__bar">
+    <div class="container header__bar-wrapper">
+      @@include('./__logo/header__logo.html')
+      <button class="header__toggle" type="button">
+        <span class="header__toggle-icon"></span>
+      </button>
+      <div class="header__menu">
+        <div class="header__advice">
+          <div class="header__advice-item">
+            <p
+              class="header__advice-text"
+              data-san="fade-in-top"
+              data-san-delay="100"
+            >
+              Бесплатная консультация и помощь в проектировании дома:
+            </p>
+            <a
+              class="header__advice-phone"
+              data-san="fade-in-right"
+              data-san-delay="300"
+              href="tel:+78125646439"
+            >
+              +7 (812) 564-64-39
+            </a>
+          </div>
+          <div class="header__advice-item header__advice-item--mobile">
+            <p
+              class="header__advice-text"
+              data-san="fade-in-top"
+              data-san-delay="400"
+            >
+              Благоустройство территории участка
+            </p>
+            <a
+              class="header__advice-phone"
+              data-san="fade-in-right"
+              data-san-delay="500"
+              href="https://travokosovv.ru" 
+              target="_blank"
+            >
+              Travokosovv.ru
+            </a>
+          </div>
+        </div>
+        @@include('../menu/menu.html')
+      </div>
+    </div>
+  </div>
+</header>

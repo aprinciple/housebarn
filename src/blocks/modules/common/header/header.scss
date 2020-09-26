@@ -1,0 +1,225 @@
+@import './__logo/header__logo.scss';
+
+.header {
+
+  &__bar {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    border-top: 3px solid $gold;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    transition: height 0.3s;
+
+    @media (min-width: $lg) {
+      height: 115px;
+      border-top-width: 4px;
+    }
+  }
+
+  &__bar--scrolled {
+    height: 70px;
+
+    @media (min-width: $lg) {
+      height: 90px;
+    }
+  }
+
+  &__bar-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__toggle {
+    position: relative;
+    width: 30px;
+    height: 23px;
+    margin-left: auto;
+    outline: none;
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #383838;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &::after {
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  &__toggle-icon {
+    display: block;
+    width: 70%;
+    height: 3px;
+    margin-left: auto;
+    background-color: #383838;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &__toggle--active {
+
+    & > .header__toggle-icon {
+      transform: scale(0);
+    }
+
+    &::before {
+      transform: translateY(10px) rotate(135deg);
+    }
+
+    &::after {
+      transform: translateY(-10px) rotate(-135deg);
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 100;
+    align-content: start;
+    row-gap: 50px;
+    width: 100vw;
+    min-height: calc(100vh - 65px);
+    height: 100%;
+    padding: 40px 20px;
+    background-color: #fff;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    overflow-y: auto;
+
+    @media (min-width: $md) {
+      padding: 60px 40px;  
+    }
+
+    @media (min-width: 992px) {
+      position: static;
+      display: grid;
+      row-gap: 0;
+      width: auto;
+      min-height: auto;
+      height: auto;
+      margin-left: auto;
+      padding: 0;
+      animation: none;
+      overflow-y: visible;
+    }
+  }
+
+  &__menu--open {
+    display: grid;
+  }
+
+  &__advice {
+    order: 1;
+    display: grid;
+    align-content: start;
+    row-gap: 20px;
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+      order: 0;
+      justify-content: end;
+      position: relative;
+      top: -7px;
+      margin-bottom: 0;
+      transition: top 0.3s;
+    }
+
+    @media (min-width: $lg) {
+      top: -18px;
+    }
+  }
+
+  .header__bar--scrolled &__advice {
+
+    @media (min-width: 992px) {
+      top: -5px;
+    }
+
+    @media (min-width: $lg) {
+      top: -9px;
+    }
+  }
+
+  &__advice-item {
+    display: grid;
+
+    @media (min-width: 992px) {
+      grid-auto-flow: column;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    &--mobile {
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  &__advice-text {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid $gold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: $blue;
+
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+      padding-left: 0;
+      border-left: none;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: normal;
+    }
+  }
+
+  &__advice-phone {
+    font-weight: bold;
+    font-size: 22px;
+    color: $gold;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+
+    &:hover,
+    &:active {
+      color: $green;
+    }
+  }
+}
+
+/* Scroll state */
+.header__bar--scrolled .logo__image {
+  width: 122px;
+  height: 60px;
+
+  @media (min-width: $lg) {
+    width: 162px;
+    height: 80px;
+  }
+}

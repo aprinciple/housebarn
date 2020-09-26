@@ -1,0 +1,47 @@
+.breadcrumb {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 20px;
+
+  @media (min-width: $md) {
+    font-size: 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (min-width: $md) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__text {
+    margin-right: 5px;
+
+    @media (min-width: $md) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    margin-right: 8px;
+    color: $blue;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    @media (min-width: $md) {
+      margin-right: 12px;
+    }
+
+    &:last-child {
+      border-bottom: 2px solid $gold;
+    }
+
+    &:hover,
+    &:active {
+      color: $gold;
+    }
+  }
+}

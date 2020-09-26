@@ -1,0 +1,109 @@
+.promo {
+  position: relative;
+  padding-top: 175px;
+  padding-bottom: 130px;
+  background-image: url('../img/bg-promo.jpg');
+  background-size: cover;
+  background-position: 65% top;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 70% 100%, 0 90%);
+
+  @media (min-width: $md) {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 70% 100%, 0 83%);
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 250px;
+    padding-bottom: 230px;
+    background-position: 0 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 100%, 0 75%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  
+    @media (min-width: $md) {
+      max-width: 600px;
+      margin-right: 50px;
+      margin-left: auto;
+      text-align: right;
+    }
+  
+    @media (min-width: 992px) {
+      margin-right: 90px;
+    }
+  
+    @media (min-width: $lg) {
+      max-width: 800px;
+      margin-right: 100px;
+    }
+  }
+
+  &__title {
+    display: grid;
+    row-gap: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+  
+    @media (min-width: $md) {
+      row-gap: 20px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    
+    @media (min-width: $lg) {
+      row-gap: 25px;
+      margin-bottom: 40px;
+      font-size: 39px;
+      line-height: 45px;
+    }
+  
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5 {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  
+  &__inner p {
+    font-size: 14px;
+    line-height: 16px;
+  
+    @media (min-width: $md) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  
+  &__buttons {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 20px;
+    margin-top: 65px;
+    justify-content: center;
+  
+    @media (min-width: $md) {
+      column-gap: 24px;
+      justify-content: end;
+    }
+  }
+  
+  &__button {}
+}

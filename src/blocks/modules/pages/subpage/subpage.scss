@@ -1,0 +1,31 @@
+.p-subpage {
+
+  &__main {
+    margin-top: 90px;
+    padding-top: 15px;
+
+    @media (min-width: $md) {
+      padding-top: 40px;
+    }
+
+    @media (min-width: $lg) {
+      padding-top: 60px;
+    }
+  }
+
+  &__breadcrumb {
+    margin-bottom: 35px;
+
+    @media (min-width: $md) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    color: #fff; 
+  }
+
+  &__talk {
+    padding-top: 0;
+  }
+}

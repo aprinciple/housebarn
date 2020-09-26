@@ -1,0 +1,138 @@
+.p-subpage {
+
+  &__main {
+  }
+
+  &__breadcrumb {
+  }
+}
+.p-contacts {
+
+  &__inner {
+    padding-top: 10px;
+
+    @media (min-width: $lg) {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      column-gap: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__info {
+  }
+
+  &__info-wrapper {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gold;
+  }
+
+  &__info-title {
+    margin-bottom: 15px;
+
+    @media (min-width: $md) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: $lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info-item {
+    display: grid;
+    font-size: 15px;
+    line-height: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @media (min-width: $md) {
+        margin-bottom: 15px;
+      }
+    }
+
+    & p {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__info-link {
+    color: $blue;
+    text-decoration: none;
+  }
+
+  &__area {
+    margin: 20px 0;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__social-title {
+    margin-bottom: 10px;
+
+    @media (min-width: $lg) {
+      font-size: 30px;
+    }
+  }
+
+  &__social-link {
+    position: relative;
+    padding-left: 17px;
+    color: $blue;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    @media (min-width: $lg) {
+      padding-left: 25px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 53%;
+      left: 0;
+      height: 2px;
+      width: 10px;
+      background-color: $gold;
+      transform: translateY(-50%);
+
+      @media (min-width: $lg) {
+        width: 15px;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $gold;
+    }
+  }
+
+  &__form {
+    margin: 30px 0;
+
+    @media (min-width: $md) {
+      margin: 50px 0;
+    }
+    @media (min-width: $lg) {
+      margin-top: 90px;
+      margin-bottom: 0;
+    }
+
+    &-wrapper {
+      @media (min-width: $lg) {
+        width: auto;
+        padding: 40px 30px;
+        column-gap: 30px;
+      }
+    }
+  }
+}

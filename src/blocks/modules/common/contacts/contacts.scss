@@ -1,0 +1,48 @@
+.contacts {
+  display: grid;
+  row-gap: 10px;
+
+  @media (min-width: $md) {
+    row-gap: 15px;
+  }
+
+  &__item {
+    display: grid;
+    justify-content: start;
+  }
+
+  &__item b {
+    font-size: 16px;
+
+    @media (min-width: $md) {
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+  }
+
+  &__item p {
+    font-size: 15px;
+    line-height: 19px;
+
+    @media (min-width: $md) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__item p, &__item a {
+    padding-left: 10px;
+  }
+
+  &__link {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover,
+    &:active {
+      color: $green;
+    }
+  }
+}

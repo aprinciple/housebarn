@@ -1,0 +1,35 @@
+.social {
+  display: inline-grid;
+  grid-auto-flow: column;
+  column-gap: 7px;
+
+  @media (min-width: 992px) {
+    column-gap: 10px;
+  }
+
+  &__link {
+    width: 33px;
+    height: 33px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link--tm::after {
+    content: url('../img/telegram.svg');
+  }
+
+  &__link--wp::after {
+    content: url('../img/whatsapp.svg');
+  }
+
+  &__link--vk::after {
+    content: url('../img/vk.svg');
+  }
+
+  &__link--im::after {
+    content: url('../img/instagram.svg');
+  }
+}

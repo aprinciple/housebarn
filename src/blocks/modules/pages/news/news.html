@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housebarn</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-subpage p-news">
+    @@include('../../common/header/header.html')
+    <main class="p-subpage__main">
+      <div class="p-subpage__breadcrumb">
+        @@include('../../common/breadcrumb/breadcrumb.html')
+      </div>
+      <div class="p-news__inner container">
+        <h1 class="p-news__title">Новости</h1>
+        <div class="p-news__cards">
+          <a href="/post-news.html" class="p-news__card">
+            <article class="p-news__card-article">
+              <figure class="p-news__card-figure">
+                <img
+                  class="p-news__card-image"
+                  src="img/house-barn.jpg"
+                  alt="Alt"
+                />
+              </figure>
+              <h2 class="p-news__card-title">Строительство БАРН домика в г.Кировск — финальные работы</h2>
+            </article>
+          </a>
+          <a href="/post-news.html" class="p-news__card">
+            <article class="p-news__card-article">
+              <figure class="p-news__card-figure">
+                <img
+                  class="p-news__card-image"
+                  src="img/house-barn.jpg"
+                  alt="Alt"
+                />
+              </figure>
+              <h2 class="p-news__card-title">Строительство БАРН домика в г.Кировск — финальные работы</h2>
+            </article>
+          </a>
+          <a href="/post-news.html" class="p-news__card">
+            <article class="p-news__card-article">
+              <figure class="p-news__card-figure">
+                <img
+                  class="p-news__card-image"
+                  src="img/house-barn.jpg"
+                  alt="Alt"
+                />
+              </figure>
+              <h2 class="p-news__card-title">Строительство БАРН домика в г.Кировск — финальные работы</h2>
+            </article>
+          </a>
+        </div>
+      </div>
+    </main>
+    @@include('../../common/footer/footer.html')
+    @@include('../../common/bonus/bonus.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

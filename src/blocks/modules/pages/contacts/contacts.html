@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housebarn</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-subpage p-contacts">
+    @@include('../../common/header/header.html')
+    <main class="p-subpage__main">
+      <div class="p-subpage__breadcrumb">
+        @@include('../../common/breadcrumb/breadcrumb.html')
+      </div>
+      <div class="container p-contacts__inner">
+        <div class="p-contacts__info">
+          <div class="p-contacts__info-wrapper">
+            <h1 class="p-contacts__info-title">Контакты</h1>
+            <div class="p-contacts__info-item">
+              <p><b>Офис: </b>г. СПб, Политехническая ул.д.4 к2</p>
+              <p>Пн-Пт: 9:00-18:00</p>
+              <p>Сб-Вс: выходной</p>
+            </div>
+            <p class="p-contacts__info-item">
+              <b
+                >По всем вопросам — звоните, на звонки отвечаем
+                круглосуточно!</b
+              >
+            </p>
+            <div class="p-contacts__info-item">
+              <a class="p-contacts__info-link" href="tel:78125646439"
+                >+7 (812) 564-64-39</a
+              >
+              <a class="p-contacts__info-link" href="mailto:info@housebarn.ru"
+                >info@housebarn.ru</a
+              >
+            </div>
+          </div>
+          <p class="p-contacts__area">
+            <b>Выставочная площадка:</b> СПб, Мурманское шоссе, 2А
+          </p>
+          <div class="p-contacts__social">
+            <h2 class="p-contacts__social-title">Housebarn в соц. сетях:</h2>
+            <a
+              class="p-contacts__social-link"
+              href="https://vk.com/housebarnspb"
+              target="_blank"
+              >vk.com/housebarnspb</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://facebook.com/barnspb"
+              target="_blank"
+              >facebook.com/barnspb</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://instagram.com/housebarnspb"
+              target="_blank"
+              >instagram.com/housebarnspb</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://plus.google.com/+housebarnspb"
+              target="_blank"
+              >plus.google.com/+housebarnspb</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://ok.ru/group/54289140547687"
+              target="_blank"
+              >ok.ru/group/54289140547687</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://twitter.com/housebarnspb"
+              target="_blank"
+              >twitter.com/housebarnspb</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://housebarnspb.tumblr.com"
+              target="_blank"
+              >housebarnspb.tumblr.com</a
+            >
+            <a
+              class="p-contacts__social-link"
+              href="https://flamp.ru/housebarnspb"
+              target="_blank"
+              >flamp.ru/housebarnspb</a
+            >
+          </div>
+        </div>
+        <div class="p-contacts__form">
+          <form class="form form--post" action="/" method="POST">
+            <div class="form__wrapper p-contacts__form-wrapper">
+              <div class="form__text">
+                <h3 class="form__title" data-san="fade-in-right">
+                  Нужен дом?
+                </h3>
+                <p
+                  class="form__subtitle"
+                  data-san="fade-in-bottom"
+                  data-san-delay="200"
+                >
+                  Напишите нам и один из наших менеджеров свяжемся с вами в
+                  ближайшее время!
+                </p>
+              </div>
+              <div class="form__fields">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                  required
+                />
+                <input
+                  class="form__input"
+                  type="tel"
+                  name="phone"
+                  pattern="[0-9]{7,11}"
+                  placeholder="7 988 555 3535"
+                  required
+                />
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="alexander@gmail.com"
+                />
+                <textarea
+                  class="form__textarea"
+                  name="message"
+                  placeholder="Расскажите нам немного о своём проекте..." 
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="button form__button"
+                type="submit"
+                data-san="fade-in-top"
+                data-san-delay="400"
+              >
+                <span
+                  class="button__wrapper button__wrapper--transparent form__button-wrapper"
+                >
+                  <span class="button__text">Отправить</span>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    @@include('../../common/footer/footer.html')
+    @@include('../../common/bonus/bonus.html')
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
