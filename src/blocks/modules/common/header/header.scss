@@ -96,11 +96,11 @@
     left: 0;
     z-index: 100;
     align-content: start;
-    row-gap: 50px;
+    row-gap: 30px;
     width: 100vw;
     min-height: calc(100vh - 65px);
     height: 100%;
-    padding: 40px 20px;
+    padding: 35px 20px 20px 20px;
     background-color: #fff;
     animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     overflow-y: auto;
@@ -131,7 +131,7 @@
     order: 1;
     display: grid;
     align-content: start;
-    row-gap: 20px;
+    row-gap: 15px;
     margin-bottom: 30px;
 
     @media (min-width: 992px) {
@@ -177,7 +177,7 @@
   }
 
   &__advice-text {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left: 10px;
     border-left: 3px solid $gold;
     font-weight: bold;
@@ -197,7 +197,7 @@
 
   &__advice-phone {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color: $gold;
     text-decoration: none;
     transition: color 0.3s;
