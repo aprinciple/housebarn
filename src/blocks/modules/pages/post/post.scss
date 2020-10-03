@@ -1,18 +1,14 @@
 .p-post {
 
-  &__main {
-    margin-top: 90px;
-  }
-
   &__intro {
-    padding: 40px 0;
+    padding-bottom: 40px;
 
     @media (min-width: $md) {
-      padding: 50px 0;
+      padding-bottom: 50px;
     }
 
     @media (min-width: $lg) {
-      padding: 100px 0;
+      padding-bottom: 100px;
     }
   }
 
