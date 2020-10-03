@@ -10,9 +10,12 @@
       rel="stylesheet"
     />
   </head>
-  <body class="p-post">
+  <body class="p-subpage p-post">
     @@include('../../common/header/header.html')
-    <main class="p-post__main">
+    <main class="p-subpage__main">
+      <div class="p-subpage__breadcrumb">
+        @@include('../../common/breadcrumb/breadcrumb.html')
+      </div>
       <div class="p-post__intro">
         <div class="container p-post__intro-wrapper">
           <div class="p-post__intro-content">
